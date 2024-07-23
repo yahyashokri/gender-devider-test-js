@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>javascript</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	var users = [
+		{user : "username" , age : 21 , gender : "male"},
+		{user : "username" , age : 18 , gender : "male"},
+		{user : "username" , age : 31 , gender : "male"},
+		{user : "username" , age : 17 , gender : "female"},
+		{user : "username" , age : 38 , gender : "male"},
+		{user : "username" , age : 35 , gender : "male"},
+		{user : "username" , age : 22 , gender : "female"},
+		{user : "username" , age : 43 , gender : "male"},
+		{user : "username" , age : 64 , gender : "female"},
+		{user : "username" , age : 31 , gender : "male"},
+		{user : "username" , age : 28 , gender : "male"},
+		{user : "username" , age : 21 , gender : "female"},
+		{user : "username" , age : 27 , gender : "male"},
+		{user : "username" , age : 22 , gender : "female"},
+		{user : "username" , age : 43 , gender : "female"},
+		{user : "username" , age : 32 , gender : "female"},
+		{user : "username" , age : 25 , gender : "female"},
+		{user : "username" , age : 13 , gender : "male"},
+		{user : "username" , age : 53 , gender : "male"},
+		{user : "username" , age : 32 , gender : "female"}
+		]	
+	function male_counter(){
+		var gender = users[index].gender;
+		if (gender == "male"){
+			return true;
+		}
+	}
+	function female_counter(){
+		var gender = users[index].gender;
+		if (gender == "female"){
+			return true;
+		}
+	}
+	var male = 0 ;
+	var female = 0;
+	for (var index = 0 ; index < 20 ; index ++){
+		if (male_counter()){
+			male ++;
+		};
+		if (female_counter()) {
+			female++;
+		}
+	};
+	console.log(`There are ${male} males and ${female} females on the list of users.`)
+</script>
+
+
+</body>
+</html>
